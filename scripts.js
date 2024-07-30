@@ -74,3 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
     progressObserver.observe(bar);
   });
 });
+
+// CV download
+
+document.getElementById("getCvBtn").addEventListener("click", function (event) {
+  event.preventDefault();
+  let userConfirmation = confirm("Do you want to download the CV?");
+  if (userConfirmation) {
+    window.location.href = "Resume-Somnath-Bhattarai.pdf";
+  }
+});
