@@ -381,6 +381,9 @@ header {
 .w-85 {
   width: 85%;
 }
+.w-78 {
+  width: 78%;
+}
 .w-80 {
   width: 80%;
 }
@@ -395,6 +398,10 @@ header {
 }
 .w-60 {
   width: 60%;
+}
+
+.w-68 {
+  width: 68%;
 }
 
 /* Awards Section */
