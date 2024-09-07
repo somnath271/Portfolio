@@ -74,3 +74,14 @@ document.addEventListener("DOMContentLoaded", function () {
     progressObserver.observe(bar);
   });
 });
+
+// Script to add 'show' class to awards section when scrolled into view
+window.addEventListener("scroll", function () {
+  var awards = document.querySelector(".award-text");
+  var awardsPosition = awards.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.3;
+
+  if (awardsPosition < screenPosition) {
+    awards.classList.add("show");
+  }
+});

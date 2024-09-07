@@ -98,6 +98,11 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-clip: text;
 }
 
 /* Gradient Animation */
@@ -343,7 +348,7 @@ header {
 }
 
 #skills h2 {
-  color: #6c63ff;
+  color: #6a11cb;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -449,20 +454,77 @@ header {
   width: 68%;
 }
 
-/* Awards Section */
+/* Awards */
+
 #awards {
-  background-color: #f4f4f4;
   padding: 100px 0;
+  background-color: #f9f9f9;
+  overflow: hidden; /* For smooth animations */
 }
 
-#awards h2 {
-  color: #6c63ff;
+.award-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  background: linear-gradient(90deg, #e74c3c, #8e44ad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 2px solid #8e44ad;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.section-titles {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #6a11cb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  animation: fadeInDown 1s ease;
 }
 
-#awards p {
-  font-size: 1.2em;
+.section-titles:after {
+  content: "";
+  width: 14%;
+  height: 2px;
+  background: #6a11cb;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Animation for Awards Text */
+.award-text.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Contact Section */
