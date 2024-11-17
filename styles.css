@@ -618,3 +618,112 @@ footer a {
 footer a:hover {
   color: #6c63ff;
 }
+
+/* Experience Section Styles */
+
+.experience {
+  background: #f9f9f9;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.timeline h4.section-subheading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #321a1a;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 50px;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: 0;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.timeline-item .timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  right: 0;
+  left: auto;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timeline-content small {
+  color: #666;
+  font-size: 14px;
+}
+
+.timeline-content p {
+  margin: 10px 0 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.timeline-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* expertise section starts */
+.heading small {
+  color: #6f34fe;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.heading h3 {
+  margin-top: 0.5rem;
+  color: #3f396d;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.expertise h4 {
+  color: #3f396d;
+  font-weight: 700;
+}
+.expertise a {
+  text-decoration: none;
+  color: #fca61f;
+}
+.expertise a:hover {
+  color: #6f34fe;
+}
+.expertise .service-card {
+  text-align: center;
+  padding: 15px 15px;
+  border-radius: 0.7rem;
+}
