@@ -73,6 +73,26 @@ document.addEventListener("DOMContentLoaded", function () {
   progressBars.forEach((bar) => {
     progressObserver.observe(bar);
   });
+
+  // Dark mode toggle
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  darkModeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+    document.querySelectorAll(".navbar, .section-title, .btn, .footer").forEach(el => {
+      el.classList.toggle("dark-mode");
+    });
+  });
+
+  // Smooth scrolling
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
 });
 
 // Script to add 'show' class to awards section when scrolled into view
