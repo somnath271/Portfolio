@@ -339,8 +339,8 @@ export const quotesData = [
     author: "Somnath Bhattarai",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '"Das Internet ist grenzenlos und Ihr Code ist der Schlüssel zur Erschließung seines Potenzials."',
+    en: `"The web is limitless, and your code is the key to unlocking its potential."`,
   },
 ] as const;
 
