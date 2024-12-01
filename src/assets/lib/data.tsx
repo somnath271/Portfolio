@@ -20,9 +20,9 @@ import axiosicon from "../../assets/icons/axiosicon.svg";
 // import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 // import jwticon from "../../assets/icons/jwticon.svg";
-import wordpressicon from "../../assets/icons/wordpressicon.svg";
-import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
+// import wordpressicon from "../../assets/icons/wordpressicon.svg";
+// import shopifyicon from "../../assets/icons/shopifyicon.svg";
+// import webflowicon from "../../assets/icons/webflowicon.svg";
 import weatherApp from "../../assets/img/weatherapp.webp";
 import clothesRecommendation from "../../assets/img/clothesapp.webp";
 import sleepCycle from "../../assets/img/sleepcycle.webp";
@@ -270,31 +270,31 @@ export const skillsDataDesign = [
   },
 ] as const;
 
-export const skillsDataCMS = [
-  {
-    skillsTitle: "CMS",
-    skills: [
-      {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
-        color: "#21759B",
-      },
-      {
-        title: "Shopify",
-        hash: "#Shopify",
-        icon: shopifyicon,
-        color: "#7AB55C",
-      },
-      {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
-        color: "#4353FF",
-      },
-    ],
-  },
-] as const;
+// export const skillsDataCMS = [
+//   {
+//     skillsTitle: "CMS",
+//     skills: [
+//       {
+//         title: "WordPress",
+//         hash: "#WordPress",
+//         icon: wordpressicon,
+//         color: "#21759B",
+//       },
+//       {
+//         title: "Shopify",
+//         hash: "#Shopify",
+//         icon: shopifyicon,
+//         color: "#7AB55C",
+//       },
+//       {
+//         title: "Webflow",
+//         hash: "#Webflow",
+//         icon: webflowicon,
+//         color: "#4353FF",
+//       },
+//     ],
+//   },
+// ] as const;
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
