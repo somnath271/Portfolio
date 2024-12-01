@@ -42,7 +42,7 @@ export const headerIntroData = {
     de: "Hi, ich bin Somnath",
     en: "Hi, I'm Somnath Bhattarai",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Frontend Developer",
   description: {
     de: "Hallo! Ich bin Somnath Bhattarai, ein autodidaktischer Programmierer und Frontend-Webentwickler, der gerne interaktive Webdesigns erstellt. Derzeit studiere ich Informatik-Ingenieur und möchte mein Fachwissen in der Full-Stack-Webentwicklung erweitern!",
     en: "Hi there! I'm Somnath Bhattarai, a self-taught programmer and Frontend Web Developer who enjoys creating interactive web designs. Currently pursuing a degree in Computer Science Engineering also committed to expanding my expertise in Full-stack web development. ",
