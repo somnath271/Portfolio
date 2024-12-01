@@ -45,7 +45,7 @@ export const headerIntroData = {
   subtitle: "Frontend Developer",
   description: {
     de: "Hallo! Ich bin Somnath Bhattarai, ein autodidaktischer Programmierer und Frontend-Webentwickler, der gerne interaktive Webdesigns erstellt. Derzeit studiere ich Informatik-Ingenieur und möchte mein Fachwissen in der Full-Stack-Webentwicklung erweitern!",
-    en: "Hi there! I'm Somnath Bhattarai, a self-taught programmer and Frontend Web Developer who enjoys creating interactive web designs. Currently pursuing a degree in Computer Science Engineering also committed to expanding my expertise in Full-stack web development. ",
+    en: "Hello! I am Somnath Bhattarai, a self-taught programmer and Frontend Web Developer who enjoys creating interactive web designs. Currently pursuing a degree in Computer Science Engineering, also committed to expanding my expertise in Full-stack web development. ",
   },
   buttons: [
     {
