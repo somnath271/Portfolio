@@ -34,7 +34,7 @@ import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
-import Imprint from "../../components/Imprint";
+// import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
@@ -305,7 +305,6 @@ export const navLinks = [
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
   { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
@@ -398,7 +397,7 @@ export const contactData = {
   },
   description: {
     de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
-    en: "Write me a message and I will get back to you.",
+    en: "If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests.",
   },
   inputfields: [
     {
