@@ -89,9 +89,11 @@ const Footer: React.FC = () => {
       </div>
       
       <footer className="footer-container text-center py-4">
-        <p>© 2024 Somnath. All rights reserved.</p>
+        <p> &copy; {new Date().getFullYear()} Somnath. All rights reserved.</p>
       </footer>
+
     </footer>
+
   );
 };
 
