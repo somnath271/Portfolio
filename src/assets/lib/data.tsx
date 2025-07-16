@@ -101,7 +101,7 @@ export const projectsData = [
     },
   },
   {
-    title: "Sleep Cycle Calculator",
+    title: "Remnix - Sleep Cycle Calculator",
     description:
       "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
     description_EN:
@@ -121,7 +121,7 @@ export const projectsData = [
       { name: "Render", icon: rendericon },
     ],
     image: sleepCycle,
-    deploymenturl: "https://sleep-cycle-calculator-nine.vercel.app/Calculate%20Sleep/index.html",
+    deploymenturl: "https://www.remnix.me/calculate-sleep/index.html",
     githuburl:
       "https://github.com/somnath271/Sleep-Cycle-Calculator",
     githubicon: FiGithub,
