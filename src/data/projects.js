@@ -22,7 +22,7 @@ export const PROJECTS = [
       "Node.js",
       "Express.js",
     ],
-    link: "https://my-weather-app-xjyn.onrender.com/",
+    link: "https://my-weather-app-alpha-taupe.vercel.app/",
     repo: "https://github.com/somnath271/My_Weather_App",
   },
   {
