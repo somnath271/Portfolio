@@ -26,6 +26,14 @@ export const PROJECTS = [
     repo: "https://github.com/somnath271/My_Weather_App",
   },
   {
+    title: "React Quiz Web",
+    description:
+      "A quiz web application built with React.js that allows users to take quizzes on various topics and track their scores.",
+    tech: ["React.js", "JavaScript", "CSS", "HTML"],
+    link: "https://quiz-web-six.vercel.app/",
+    repo: "https://github.com/somnath271/quiz_web",
+  },
+  {
     title: "Clothes Recommendation System",
     description:
       "This project aims to provide users with personalized clothing recommendations for various occasions and seasons.",
