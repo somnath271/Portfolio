@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function AnimatedSection({ children }) {
@@ -8,13 +8,13 @@ export default function AnimatedSection({ children }) {
   });
 
   return (
-    <motion.div
+    <Motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       {children}
-    </motion.div>
+    </Motion.div>
   );
 }

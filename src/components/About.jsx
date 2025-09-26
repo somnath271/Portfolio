@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import Section from "./Section";
 import { fadeUp } from "../animations/motionConfig";
 import {
@@ -15,19 +15,19 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function About() {
   return (
-    <Section id="about" heading="About Me" sub="Who I am & What I do.">
+    <Section id="about" heading="About Me" sub="Who I am & What I do." className="pt-6 md:pt-10">
       {/* Intro Heading */}
-      <motion.h2
+      <Motion.h2
         {...fadeUp}
         className="text-2xl md:text-3xl font-bold text-indigo-600 text-center lg:mr-10"
       >
         Hi, I'm Somnath Bhattarai 👋
-      </motion.h2>
+      </Motion.h2>
 
       {/* About Text */}
-      <motion.p
+      <Motion.p
         {...fadeUp}
-        className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl text-lg md:text-xl leading-loose text-justify lg:ml-22"
+        className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl mx-auto text-lg md:text-xl leading-loose text-justify"
       >
         A passionate <span className="font-semibold">Frontend Developer</span>{" "}
         with a strong foundation in programming and a love for crafting
@@ -42,20 +42,20 @@ export default function About() {
         with backend integrations and APIs to deliver complete, scalable
         solutions. My goal is to create digital products that not only look
         great but also enhance usability and drive real engagement. 🚀
-      </motion.p>
+      </Motion.p>
 
       {/* Skills Section */}
-      <motion.h3
+      <Motion.h3
         {...fadeUp}
         className="mt-10 text-xl md:text-2xl font-semibold text-slate-900 dark:text-white text-center"
       >
         ⚡ Skills & Tools
-      </motion.h3>
+      </Motion.h3>
 
       {/* Skills Logos with Tooltip + Links */}
-      <motion.div
+      <Motion.div
         {...fadeUp}
-        className="mt-6 flex flex-wrap justify-center gap-10 text-5xl text-slate-600 dark:text-slate-300"
+        className="mt-6 flex flex-wrap justify-center gap-12 text-6xl md:text-7xl text-slate-600 dark:text-slate-300"
       >
         {/* HTML5 */}
         <a
@@ -173,7 +173,7 @@ export default function About() {
             Node.js
           </span>
         </a>
-      </motion.div>
+      </Motion.div>
     </Section>
   );
 }
