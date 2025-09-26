@@ -24,7 +24,10 @@ export default function Navbar() {
       {/* Desktop Navbar */}
       <header className="hidden md:block fixed inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="mt-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/70 bg-white/70 dark:bg-slate-900/60 backdrop-blur shadow-sm">
+          <div
+            className={`mt-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/70 backdrop-blur transition-all
+            ${showTop ? "bg-white/80 dark:bg-slate-900/70 shadow-md" : "bg-white/70 dark:bg-slate-900/60 shadow-sm"}`}
+          >
             <div className="flex items-center justify-between px-4 py-3">
               {/* Logo */}
               <button
@@ -49,6 +52,7 @@ export default function Navbar() {
                     smooth
                     offset={-96}
                     duration={500}
+                    activeClass="text-indigo-600 dark:text-indigo-400 font-semibold"
                     className="relative cursor-pointer text-slate-600 dark:text-slate-300
                                hover:text-indigo-500 dark:hover:text-indigo-400
                                transition-colors duration-300"
@@ -78,7 +82,7 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Bottom Navbar */}
-      <nav className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-t border-slate-200 dark:border-slate-700">
+      <nav className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white/40 dark:bg-slate-900/40 backdrop-blur-2xl backdrop-saturate-150 supports-[backdrop-filter]:bg-white/30 dark:supports-[backdrop-filter]:bg-slate-900/30 border-t border-slate-200/70 dark:border-slate-700/70 shadow-[0_-8px_30px_-10px_rgba(0,0,0,0.4)]">
         <div className="flex justify-around items-center py-2">
           {navItems.map((n) => (
             <Link
@@ -88,6 +92,7 @@ export default function Navbar() {
               smooth
               offset={-96}
               duration={500}
+              activeClass="text-indigo-600 dark:text-indigo-400 font-semibold"
               className="relative flex flex-col items-center text-xs text-slate-600 dark:text-slate-300
                          hover:text-indigo-500 dark:hover:text-indigo-400
                          transition-colors duration-300"

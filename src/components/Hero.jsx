@@ -152,24 +152,24 @@ export default function Hero() {
       {/* Quick Stats / Highlights */}
       <div className="absolute inset-x-0 bottom-24 hidden md:block">
         <div className="mx-auto max-w-4xl grid grid-cols-3 gap-6 px-6">
-          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-slate-200">
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaCode className="text-indigo-400 text-xl" />
             <div>
-              <p className="text-sm text-slate-400">Experience</p>
+              <p className="text-sm text-white/90 dark:text-slate-300">Experience</p>
               <p className="font-semibold">1+ years coding</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-slate-200">
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaFolderOpen className="text-purple-400 text-xl" />
             <div>
-              <p className="text-sm text-slate-400">Projects</p>
+              <p className="text-sm text-white/90 dark:text-slate-300">Projects</p>
               <p className="font-semibold">10+ shipped</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-slate-200">
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaHandshake className="text-pink-400 text-xl" />
             <div>
-              <p className="text-sm text-slate-400">Availability</p>
+              <p className="text-sm text-white/90 dark:text-slate-300">Availability</p>
               <p className="font-semibold">Open to work</p>
             </div>
           </div>
