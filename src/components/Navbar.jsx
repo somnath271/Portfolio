@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion as Motion } from "framer-motion";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FaGithub } from "react-icons/fa";
 import { Home, User, Code, Mail } from "lucide-react";
@@ -7,8 +8,9 @@ export default function Navbar() {
   const [showTop, setShowTop] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setShowTop(window.scrollY > 600);
-    window.addEventListener("scroll", onScroll);
+    const onScroll = () => setShowTop(window.scrollY > 1);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: false });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -25,25 +27,27 @@ export default function Navbar() {
       <header className="hidden md:block fixed inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div
-            className={`mt-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/70 backdrop-blur transition-all
-            ${showTop ? "bg-white/80 dark:bg-slate-900/70 shadow-md" : "bg-white/70 dark:bg-slate-900/60 shadow-sm"}`}
+            className={`mt-4 rounded-2xl transition-all ${
+              showTop
+                ? "border border-slate-200/80 dark:border-slate-800/70 bg-white/80 dark:bg-slate-900/70 backdrop-blur shadow-md"
+                : "bg-transparent border-transparent shadow-none"
+            }`}
           >
-            <div className="flex items-center justify-between px-4 py-3">
-              {/* Logo */}
-              <button
+            <div className="grid grid-cols-3 items-center px-4 py-3">
+              {/* Logo (left) */}
+              <Motion.button
                 onClick={() => scroll.scrollToTop({ duration: 600 })}
-                className="text-sm font-semibold tracking-tight"
+                className="text-sm font-semibold tracking-tight justify-self-start"
+                initial={false}
+                animate={{ x: showTop ? 60 : 0 }}
+                transition={{ type: "spring", stiffness: 200, damping: 25 }}
               >
-                <span className="text-slate-900 dark:text-slate-100">
-                  Somnath
-                </span>
-                <span className="text-indigo-600 dark:text-indigo-400">
-                  .dev
-                </span>
-              </button>
+                <span className="text-slate-900 dark:text-slate-100">Somnath</span>
+                <span className="text-indigo-600 dark:text-indigo-400">.dev</span>
+              </Motion.button>
 
-              {/* Desktop Nav */}
-              <nav className="hidden md:flex items-center gap-6 text-sm">
+              {/* Desktop Nav (center) */}
+              <nav className="hidden md:flex items-center gap-6 text-sm justify-self-center">
                 {navItems.map((n) => (
                   <Link
                     key={n.to}
@@ -67,15 +71,20 @@ export default function Navbar() {
                     </span>
                   </Link>
                 ))}
-                <a
-                  href="https://github.com/somnath271"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-300"
-                >
-                  <FaGithub className="h-4 w-4" /> GitHub
-                </a>
               </nav>
+
+              {/* GitHub CTA (right) */}
+              <Motion.a
+                href="https://github.com/somnath271"
+                target="_blank"
+                rel="noreferrer"
+                className="justify-self-end inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-300"
+                initial={false}
+                animate={{ x: showTop ? -60 : 0 }}
+                transition={{ type: "spring", stiffness: 200, damping: 25 }}
+              >
+                <FaGithub className="h-4 w-4" /> GitHub
+              </Motion.a>
             </div>
           </div>
         </div>
