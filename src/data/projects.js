@@ -38,7 +38,7 @@ export const PROJECTS = [
     description:
       "This project aims to provide users with personalized clothing recommendations for various occasions and seasons.",
     tech: ["JavaScript", "Bootstrap", "PHP"],
-    link: "https://your-demo-link.example",
+    link: "https://suman.infinityfreeapp.com/Clothes_Recommendation_System",
     repo: "https://github.com/somnath271/Stylish-Clothes-Recommendation-System",
   },
   {
