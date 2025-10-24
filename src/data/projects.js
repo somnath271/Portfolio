@@ -26,6 +26,20 @@ export const PROJECTS = [
     repo: "https://github.com/somnath271/My_Weather_App",
   },
   {
+    title: "Heart Catching Game",
+    description: "A real-time two-player web game with responsive mobile controls and synchronized gameplay.",
+    tech: [
+      "React.js",
+      "Socket.io",
+      "Node.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML",
+    ],
+    link: "https://heart-catching-game.vercel.app/",
+    repo: "https://github.com/somnath271/heart-catching-game",
+  },
+  {
     title: "React Quiz Web",
     description:
       "A quiz web application built with React.js that allows users to take quizzes on various topics and track their scores.",
