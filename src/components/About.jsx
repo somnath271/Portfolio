@@ -15,7 +15,12 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function About() {
   return (
-    <Section id="about" heading="About Me" sub="Who I am & What I do." className="pt-6 md:pt-10">
+    <Section
+      id="about"
+      heading="About Me"
+      sub="Who I am & What I do."
+      className="pt-6 md:pt-10"
+    >
       {/* Intro Heading */}
       <Motion.h2
         {...fadeUp}
@@ -29,19 +34,33 @@ export default function About() {
         {...fadeUp}
         className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl mx-auto text-lg md:text-xl leading-loose text-justify"
       >
-        A passionate <span className="font-semibold">Frontend Developer</span>{" "}
-        with a strong foundation in programming and a love for crafting
-        interactive, user-friendly web experiences. I specialize in building
-        clean, responsive, and visually engaging websites using modern
-        technologies like <span className="font-semibold">React</span> and{" "}
-        <span className="font-semibold">Tailwind CSS</span>.
+        A <span className="font-semibold">Frontend Web Developer</span>{" "}
+        passionate about building responsive, user-friendly, and visually
+        engaging web applications. I specialize in{" "}
+        <span className="font-semibold">React.js</span>,{" "}
+        <span className="font-semibold">Tailwind CSS</span>, and modern
+        JavaScript frameworks, creating clean and scalable frontends that
+        enhance user experience.
+        <br />
+        <br />I also have experience with{" "}
+        <span className="font-semibold">backend integrations and APIs</span>,
+        allowing me to deliver complete, functional solutions. I've built
+        projects like{" "}
+        <span className="font-semibold">
+          quiz platforms, real-time weather apps, and interactive tools
+        </span>
+        , focusing on performance, usability, and reusable code.
         <br />
         <br />
-        Beyond frontend, I'm expanding my skills in{" "}
-        <span className="font-semibold">full-stack development</span>, working
-        with backend integrations and APIs to deliver complete, scalable
-        solutions. My goal is to create digital products that not only look
-        great but also enhance usability and drive real engagement. 🚀
+        I'm open to <span className="font-semibold">
+          remote frontend roles
+        </span>{" "}
+        and also ready for{" "}
+        <span className="font-semibold">
+          relocation or sponsorship opportunities
+        </span>
+        , excited to collaborate with international teams to turn ideas into
+        impactful digital experiences. 🚀
       </Motion.p>
 
       {/* Skills Section */}
