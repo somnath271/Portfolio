@@ -1,6 +1,13 @@
 import { motion as Motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { FaGithub, FaLinkedin, FaInstagram, FaCode, FaFolderOpen, FaHandshake } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaCode,
+  FaFolderOpen,
+  FaHandshake,
+} from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 
 export default function Hero() {
@@ -21,7 +28,7 @@ export default function Hero() {
         className="flex-1 space-y-6 text-center md:text-left z-10"
       >
         <h1 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-snug">
-          <span className="">👋 Hey I'm </span>
+          <span className="">👋 Hi I'm </span>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
             Somnath
           </span>
@@ -39,7 +46,7 @@ export default function Hero() {
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-indigo-600 shadow-lg relative z-10">
               <img
                 src="/Mee.jpeg"
-                alt="Somnath"
+                alt="Somnath Bhattarai - Frontend Developer"
                 className="w-full h-78 object-cover"
               />
             </div>
@@ -47,13 +54,21 @@ export default function Hero() {
         </div>
 
         <div className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto md:mx-0">
-          <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Welcome to my digital space ✨</p>
-          <p className="mt-2">🚀 <span className="font-semibold">Frontend Developer</span></p>
+          <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
+            Frontend Developer specialising in React
+          </p>
+          <p className="mt-2">
+            🕒{" "}
+            <span className="font-semibold">
+              Available for remote and onsite frontend roles
+            </span>
+          </p>
         </div>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Link
+            aria-label="View Projects"
             to="projects"
             smooth
             duration={600}
@@ -65,6 +80,7 @@ export default function Hero() {
           </Link>
 
           <Link
+            aria-label="Contact Me"
             to="contact"
             smooth
             duration={600}
@@ -155,21 +171,27 @@ export default function Hero() {
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaCode className="text-indigo-400 text-xl" />
             <div>
-              <p className="text-sm text-white/90 dark:text-slate-300">Experience</p>
+              <p className="text-sm text-white/90 dark:text-slate-300">
+                Experience
+              </p>
               <p className="font-semibold">1+ years coding</p>
             </div>
           </div>
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaFolderOpen className="text-purple-400 text-xl" />
             <div>
-              <p className="text-sm text-white/90 dark:text-slate-300">Projects</p>
+              <p className="text-sm text-white/90 dark:text-slate-300">
+                Projects
+              </p>
               <p className="font-semibold">10+ shipped</p>
             </div>
           </div>
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaHandshake className="text-pink-400 text-xl" />
             <div>
-              <p className="text-sm text-white/90 dark:text-slate-300">Availability</p>
+              <p className="text-sm text-white/90 dark:text-slate-300">
+                Availability
+              </p>
               <p className="font-semibold">Open to work</p>
             </div>
           </div>
@@ -177,8 +199,15 @@ export default function Hero() {
       </div>
 
       {/* Bottom Wave Divider */}
-      <div className="absolute bottom-0 inset-x-0 pointer-events-none select-none" aria-hidden>
-        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" className="w-full h-[120px] fill-current text-slate-900/70 dark:text-slate-900/60">
+      <div
+        className="absolute bottom-0 inset-x-0 pointer-events-none select-none"
+        aria-hidden
+      >
+        <svg
+          viewBox="0 0 1440 120"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-[120px] fill-current text-slate-900/70 dark:text-slate-900/60"
+        >
           <path d="M0,64L48,58.7C96,53,192,43,288,37.3C384,32,480,32,576,53.3C672,75,768,117,864,122.7C960,128,1056,96,1152,74.7C1248,53,1344,43,1392,37.3L1440,32L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z" />
         </svg>
       </div>

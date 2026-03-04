@@ -26,7 +26,7 @@ export default function About() {
         {...fadeUp}
         className="text-2xl md:text-3xl font-bold text-indigo-600 text-center lg:mr-10"
       >
-        Hi, I'm Somnath Bhattarai 👋
+        Hi, I'm Somnath Bhattarai
       </Motion.h2>
 
       {/* About Text */}
@@ -34,33 +34,31 @@ export default function About() {
         {...fadeUp}
         className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl mx-auto text-lg md:text-xl leading-loose text-justify"
       >
-        A <span className="font-semibold">Frontend Web Developer</span>{" "}
-        passionate about building responsive, user-friendly, and visually
-        engaging web applications. I specialize in{" "}
-        <span className="font-semibold">React.js</span>,{" "}
-        <span className="font-semibold">Tailwind CSS</span>, and modern
-        JavaScript frameworks, creating clean and scalable frontends that
-        enhance user experience.
+        A <span className="font-semibold">Frontend Developer</span> focused on
+        building scalable, maintainable, and user-friendly web interfaces using{" "}
+        <span className="font-semibold">React.js</span> and modern{" "}
+        <span className="font-semibold">JavaScript</span>.
+        <br />I specialise in:
+        <ul className="list-disc ml-5 mt-2 space-y-1">
+          <li className="pl-2 text-justify">
+            Converting UI/UX designs into reusable React components
+          </li>
+          <li className="pl-2 text-justify">
+            Integrating REST APIs into production-ready applications
+          </li>
+          <li className="pl-2 text-justify">
+            Optimising performance and responsiveness across devices
+          </li>
+          <li className="pl-2 text-justify">
+            Writing clean, modular, maintainable code
+          </li>
+        </ul>
+        I've developed interactive web applications, real-time tools, and
+        UI-driven platforms. I enjoy collaborating with teams and supporting
+        agencies, startups, and companies on meaningful projects.
         <br />
-        <br />I also have experience with{" "}
-        <span className="font-semibold">backend integrations and APIs</span>,
-        allowing me to deliver complete, functional solutions. I've built
-        projects like{" "}
-        <span className="font-semibold">
-          quiz platforms, real-time weather apps, and interactive tools
-        </span>
-        , focusing on performance, usability, and reusable code.
-        <br />
-        <br />
-        I'm open to <span className="font-semibold">
-          remote frontend roles
-        </span>{" "}
-        and also ready for{" "}
-        <span className="font-semibold">
-          relocation or sponsorship opportunities
-        </span>
-        , excited to collaborate with international teams to turn ideas into
-        impactful digital experiences. 🚀
+        I'm open to remote frontend roles and internships, eager to learn and
+        contribute effectively.
       </Motion.p>
 
       {/* Skills Section */}
