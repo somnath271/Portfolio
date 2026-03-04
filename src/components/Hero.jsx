@@ -55,7 +55,7 @@ export default function Hero() {
 
         <div className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto md:mx-0">
           <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
-            Frontend Developer specialising in React
+            Frontend Web Developer specialising in React
           </p>
           <p className="mt-2">
             🕒{" "}
@@ -169,23 +169,24 @@ export default function Hero() {
       <div className="absolute inset-x-0 bottom-24 hidden md:block">
         <div className="mx-auto max-w-4xl grid grid-cols-3 gap-6 px-6">
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
-            <FaCode className="text-indigo-400 text-xl" />
-            <div>
-              <p className="text-sm text-white/90 dark:text-slate-300">
-                Experience
-              </p>
-              <p className="font-semibold">1+ years coding</p>
-            </div>
-          </div>
-          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaFolderOpen className="text-purple-400 text-xl" />
             <div>
               <p className="text-sm text-white/90 dark:text-slate-300">
                 Projects
               </p>
-              <p className="font-semibold">10+ shipped</p>
+              <p className="font-semibold">10+ delivered</p>
             </div>
           </div>
+          <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
+            <FaCode className="text-indigo-400 text-xl" />
+            <div>
+              <p className="text-sm text-white/90 dark:text-slate-300">
+                Skills
+              </p>
+              <p className="font-semibold">React, Tailwind</p>
+            </div>
+          </div>
+
           <div className="rounded-2xl border border-slate-700/40 bg-slate-900/40 backdrop-blur-sm p-4 flex items-center gap-3 text-white dark:text-slate-200">
             <FaHandshake className="text-pink-400 text-xl" />
             <div>
