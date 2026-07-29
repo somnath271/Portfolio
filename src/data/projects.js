@@ -6,7 +6,7 @@ export const PROJECTS = [
     description:
       "Micro-app that computes optimal sleep/wake cycles with a delightful, mobile-first UX.",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "https://remnix.me/",
+    link: "https://remnix-sleep-calculator.vercel.app/",
     repo: "https://github.com/somnath271/Sleep-Cycle-Calculator",
   },
   {
@@ -27,7 +27,8 @@ export const PROJECTS = [
   },
   {
     title: "Heart Catching Game",
-    description: "A real-time two-player web game with responsive mobile controls and synchronized gameplay.",
+    description:
+      "A real-time two-player web game with responsive mobile controls and synchronized gameplay.",
     tech: [
       "React.js",
       "Socket.io",
