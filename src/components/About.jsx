@@ -56,9 +56,6 @@ export default function About() {
         I've developed interactive web applications, real-time tools, and
         UI-driven platforms. I enjoy collaborating with teams and supporting
         agencies, startups, and companies on meaningful projects.
-        <br />
-        I'm open to remote frontend roles and internships, eager to learn and
-        contribute effectively.
       </Motion.p>
 
       {/* Skills Section */}

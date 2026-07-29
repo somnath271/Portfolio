@@ -33,7 +33,7 @@ export default function Contact() {
     <Section
       id="contact"
       heading="Let's Discuss Your Next Project"
-      sub="I'm open to work, freelance, and collaboration. I respond within 24 hours."
+      sub="I'm open to freelance projects, and collaboration. I respond within 24 hours."
     >
       <Card className="max-w-2xl mx-auto">
         <form onSubmit={handleSubmit} className="grid gap-4">

@@ -55,13 +55,7 @@ export default function Hero() {
 
         <div className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto md:mx-0">
           <p className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
-            Frontend Web Developer specialising in React
-          </p>
-          <p className="mt-2">
-            🕒{" "}
-            <span className="font-semibold">
-              Available for remote and onsite frontend roles
-            </span>
+            Frontend Developer specialising in React
           </p>
         </div>
 
@@ -193,7 +187,7 @@ export default function Hero() {
               <p className="text-sm text-white/90 dark:text-slate-300">
                 Availability
               </p>
-              <p className="font-semibold">Open to work</p>
+              <p className="font-semibold">Available for Freelance Projects</p>
             </div>
           </div>
         </div>
